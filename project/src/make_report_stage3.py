@@ -8,9 +8,14 @@ from docx_helpers import new_report, header_block, h2, h3, p, bullets, table, pi
 ROOT = Path(__file__).resolve().parent.parent
 RUN640 = ROOT / "runs" / "detect" / "runs" / "detect_n_640"
 
+# Фактические результаты 3 этапа: наша система и «типовое решение»
+# (baseline эмулирует детектор без позы — каски в руках/на поясе = «надета»).
+# Числа в тексте отчёта подставляются из этих JSON, поэтому документ всегда
+# согласован с результатами экспериментов
 status = json.load(open(ROOT / "runs" / "status_eval.json", encoding="utf-8"))
 baseline = json.load(open(ROOT / "runs" / "status_eval_baseline.json", encoding="utf-8"))
 
+# Новый документ в стиле отчётов 1-2 этапов + титульный блок 3 этапа
 doc = new_report()
 header_block(doc, 3, "Nov 23, 2026")
 
@@ -157,6 +162,8 @@ p(doc,
   "оценки головы по плечам для рабочих спиной; сформулировать рекомендуемую "
   "конфигурацию и направления улучшения.")
 
+# Готовый документ сохраняется на уровень выше — в корень репозитория,
+# рядом с отчётами 1-2 этапов
 out = ROOT.parent / "Отчёт_по_3_этапу_контроль_СИЗ_на_стройке.docx"
 doc.save(out)
 print("Сохранено:", out)
