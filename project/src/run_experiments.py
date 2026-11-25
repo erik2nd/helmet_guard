@@ -21,11 +21,26 @@ import csv as _csv
 
 
 def load_gt(testset: Path):
+    """Загружает ручную разметку тестового набора (testset/gt.csv).
+
+    Возвращает список строк-словарей: {image, helmet_on, helmet_in_hand,
+    helmet_on_belt, no_helmet}.
+    """
     with open(testset / "gt.csv", encoding="utf-8") as f:
         return list(_csv.DictReader(f))
 
 
 def main():
+    """Перебор сеток параметров и поиск лучшей конфигурации (4 этап).
+
+    Для каждой серии E1–E5 добавляются свои строки сетки: E1 — conf_det,
+    E2 — thr_head, E3 — thr_hand=thr_belt, E4 — kp_conf, E5 —
+    head_fallback. В каждой конфигурации меняется один параметр,
+    остальные — из PipelineConfig по умолчанию; модели не переобучаются.
+    Результаты пишутся в CSV (все столбцы параметров заполняются:
+    неизменённые — значениями по умолчанию), в консоль печатается лучшая
+    конфигурация по status_accuracy.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--weights", required=True)
     ap.add_argument("--pose", default="yolov8n-pose.pt")
@@ -38,6 +53,8 @@ def main():
     gt_rows = load_gt(testset)
     monitor = HelmetMonitor(args.weights, args.pose)
 
+    # Сетка экспериментов: каждая запись — одна конфигурация
+    # (по одному изменённому параметру относительно базовой)
     grid = []
     series = set(args.series.split(","))
     if "E1" in series:
@@ -53,6 +70,7 @@ def main():
 
     rows = []
     for i, params in enumerate(grid, 1):
+        # Одна конфигурация: PipelineConfig с переопределённым параметром
         cfg = PipelineConfig(**params)
         monitor.cfg = cfg
         m = evaluate(monitor, testset, gt_rows)
@@ -67,6 +85,8 @@ def main():
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
+    # Недействующие в данной конфигурации параметры заполняются значениями
+    # по умолчанию — в CSV всегда полный набор столбцов
     keys = ["conf_det", "thr_head", "thr_hand", "thr_belt", "kp_conf",
             "head_fallback", "status_accuracy", "hidden_recall", "workers"]
     base = PipelineConfig()
@@ -80,6 +100,7 @@ def main():
             wr.writerow({k: r.get(k, defaults.get(k, "")) for k in keys})
     print("Сохранено:", out)
 
+    # Лучшая конфигурация по точности статуса (hidden_recall печатается рядом)
     best = max(rows, key=lambda r: r["status_accuracy"])
     print("Лучшая конфигурация:", best)
 

@@ -1,12 +1,12 @@
 {
   "images": 47,
   "workers": 155,
-  "status_accuracy": 0.9096774193548387,
+  "status_accuracy": 0.9161290322580645,
   "hidden_violation_recall": 1.0,
   "hidden_violations_gt": 1,
   "confusion": {
-    "helmet_on->пропуск": 4,
     "helmet_on->no_helmet": 3,
+    "helmet_on->пропуск": 3,
     "no_helmet->пропуск": 3,
     "no_helmet->helmet_on": 2,
     "helmet_in_hand->helmet_on": 1,
@@ -130,7 +130,7 @@
         "helmet_on": 2,
         "helmet_in_hand": 0,
         "helmet_on_belt": 0,
-        "no_helmet": 0
+        "no_helmet": 1
       }
     },
     {
@@ -235,7 +235,7 @@
         "helmet_on": 1,
         "helmet_in_hand": 0,
         "helmet_on_belt": 0,
-        "no_helmet": 1
+        "no_helmet": 2
       }
     },
     {
@@ -472,7 +472,7 @@
         "no_helmet": 0
       },
       "pred": {
-        "helmet_on": 3,
+        "helmet_on": 4,
         "helmet_in_hand": 0,
         "helmet_on_belt": 0,
         "no_helmet": 0
