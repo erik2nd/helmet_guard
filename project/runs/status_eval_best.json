@@ -1,0 +1,722 @@
+{
+  "images": 47,
+  "workers": 155,
+  "status_accuracy": 0.9161290322580645,
+  "hidden_violation_recall": 1.0,
+  "hidden_violations_gt": 1,
+  "confusion": {
+    "helmet_on->no_helmet": 3,
+    "helmet_on->пропуск": 3,
+    "no_helmet->пропуск": 3,
+    "no_helmet->helmet_on": 2,
+    "helmet_in_hand->helmet_on": 1,
+    "no_helmet->helmet_in_hand": 1
+  },
+  "per_image": [
+    {
+      "image": "test_001.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_002.png",
+      "gt": {
+        "helmet_on": 0,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 3
+      },
+      "pred": {
+        "helmet_on": 0,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 3
+      }
+    },
+    {
+      "image": "test_007.png",
+      "gt": {
+        "helmet_on": 0,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 5
+      },
+      "pred": {
+        "helmet_on": 0,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 7
+      }
+    },
+    {
+      "image": "test_008.png",
+      "gt": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_009.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_010.png",
+      "gt": {
+        "helmet_on": 3,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 3
+      },
+      "pred": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 3
+      }
+    },
+    {
+      "image": "test_011.png",
+      "gt": {
+        "helmet_on": 3,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 3,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_012.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 1
+      }
+    },
+    {
+      "image": "test_014.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_016.png",
+      "gt": {
+        "helmet_on": 3,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 1
+      },
+      "pred": {
+        "helmet_on": 3,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 1
+      }
+    },
+    {
+      "image": "test_018.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 2
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 2
+      }
+    },
+    {
+      "image": "test_019.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_020.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_021.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 1
+      }
+    },
+    {
+      "image": "test_022.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 2
+      }
+    },
+    {
+      "image": "test_023.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 6
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 5
+      }
+    },
+    {
+      "image": "test_024.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_025.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_026.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_027.png",
+      "gt": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_029.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_030.png",
+      "gt": {
+        "helmet_on": 5,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 1
+      },
+      "pred": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_033.png",
+      "gt": {
+        "helmet_on": 0,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 3
+      },
+      "pred": {
+        "helmet_on": 0,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 3
+      }
+    },
+    {
+      "image": "test_034.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_035.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_037.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_038.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_039.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_040.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 7
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 6
+      }
+    },
+    {
+      "image": "test_041.png",
+      "gt": {
+        "helmet_on": 5,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 5,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_042.png",
+      "gt": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_043.png",
+      "gt": {
+        "helmet_on": 3,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 3,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_044.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 3
+      }
+    },
+    {
+      "image": "test_045.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_046.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_048.png",
+      "gt": {
+        "helmet_on": 5,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 5,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_049.png",
+      "gt": {
+        "helmet_on": 3,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 3,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_050.png",
+      "gt": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 2
+      },
+      "pred": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 1
+      }
+    },
+    {
+      "image": "test_052.png",
+      "gt": {
+        "helmet_on": 5,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 5,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_053.png",
+      "gt": {
+        "helmet_on": 6,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 5,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 1
+      }
+    },
+    {
+      "image": "test_055.png",
+      "gt": {
+        "helmet_on": 10,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 8,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_056.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 1
+      }
+    },
+    {
+      "image": "test_057.png",
+      "gt": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 2,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_058.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "test_059.png",
+      "gt": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      },
+      "pred": {
+        "helmet_on": 4,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 0
+      }
+    },
+    {
+      "image": "extra_inhand_01.png",
+      "gt": {
+        "helmet_on": 4,
+        "helmet_in_hand": 1,
+        "helmet_on_belt": 0,
+        "no_helmet": 4
+      },
+      "pred": {
+        "helmet_on": 5,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 1,
+        "no_helmet": 3
+      }
+    },
+    {
+      "image": "extra_accident_01.png",
+      "gt": {
+        "helmet_on": 1,
+        "helmet_in_hand": 0,
+        "helmet_on_belt": 0,
+        "no_helmet": 3
+      },
+      "pred": {
+        "helmet_on": 1,
+        "helmet_in_hand": 1,
+        "helmet_on_belt": 0,
+        "no_helmet": 2
+      }
+    }
+  ]
+}

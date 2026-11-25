@@ -1,0 +1,21 @@
+# --- Большие данные и артефакты (не для репозитория) ---
+hard hat worker.v3i.yolov8/
+hard hat worker.v3i.yolov8.zip
+
+# Датасет (3.5+ ГБ, скачивается отдельно)
+project/data/
+
+# Раны обучения и веса-посредники; оставляем только итоговые метрики
+project/runs/**
+!project/runs/*.json
+!project/runs/*.csv
+!project/runs/*.png
+
+# Предобученные веса ultralytics (скачиваются автоматически)
+project/yolov8n.pt
+project/yolov8n-pose.pt
+
+# Служебное
+__pycache__/
+*.pyc
+_preview/
